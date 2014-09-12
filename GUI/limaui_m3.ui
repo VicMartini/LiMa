@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="search_txt">
+       <property name="maximumSize">
+        <size>
+         <width>240</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>250</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Buscar por:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="filtro_cb"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="hlayout">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QListWidget" name="list"/>
+     </item>
+     <item>
+      <widget class="QListWidget" name="list2"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>377</x>
+     <y>439</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>search_txt</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>buscar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filtro_cb</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>filtro()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>349</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>list</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>Form</receiver>
+   <slot>mas()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>151</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>list</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>Form</receiver>
+   <slot>seleccionar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>list2</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>Form</receiver>
+   <slot>seleccionar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>318</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>201</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>buscar()</slot>
+  <slot>seleccionar()</slot>
+  <slot>filtro()</slot>
+  <slot>mas()</slot>
+ </slots>
+</ui>

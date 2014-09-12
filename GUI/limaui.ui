@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Open LiMa Alpha 1</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../Imágenes/fotomural-limas-fruta.png</normaloff>../../../Imágenes/fotomural-limas-fruta.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPushButton" name="nuevolibro_btn">
+     <property name="text">
+      <string>Ingresar un libro a la lista</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="quitar_btn">
+     <property name="text">
+      <string>Editar informacíon sobre un libro</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="info_btn">
+     <property name="text">
+      <string>Información sobre un libro</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="prestar_btn">
+     <property name="text">
+      <string>Prestar un libro</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../Resources/Images/20140725094711436_easyicon_net_183.png</normaloff>../Resources/Images/20140725094711436_easyicon_net_183.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="recibir_btn">
+     <property name="text">
+      <string>Recibir un libro</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../Resources/Images/20140725094739303_easyicon_net_183.png</normaloff>../Resources/Images/20140725094739303_easyicon_net_183.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="options_btn">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../Resources/Icons/dT6bRMAT9.png</normaloff>../Resources/Icons/dT6bRMAT9.png</iconset>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>nuevolibro_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>nuevolibro()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>25</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>info_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>infolibro()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>413</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quitar_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>quitarlibro()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>62</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>21</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>prestar_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>prestamo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>426</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>recibir_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>recibir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>12</x>
+     <y>255</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>options_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>opciones()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>nuevolibro()</slot>
+  <slot>infolibro()</slot>
+  <slot>quitarlibro()</slot>
+  <slot>prestamo()</slot>
+  <slot>recibir()</slot>
+  <slot>opciones()</slot>
+ </slots>
+</ui>

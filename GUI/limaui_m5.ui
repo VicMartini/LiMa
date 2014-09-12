@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>369</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../Imágenes/fotomural-limas-fruta.png</normaloff>../../../../Imágenes/fotomural-limas-fruta.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Título:    </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="titulo_txt"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Autor:    </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="autor_txt"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Género:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="genero_cb"/>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButton">
+       <property name="text">
+        <string>Nuevo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Quitar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Estado:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="estado_cb">
+       <item>
+        <property name="text">
+         <string>En biblioteca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>En reparacion</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Perdido</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="qr_perview">
+       <property name="text">
+        <string>             Código QR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="imprimir_bt">
+         <property name="text">
+          <string>Volver a  Imprimir</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="aceptar_btn">
+       <property name="text">
+        <string>Guardar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelar_btn">
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancelar_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>404</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aceptar_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>aceptar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>410</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>imprimir_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>imprimir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>353</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>nuevogenero()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>213</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>quitargenero()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>358</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>95</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>aceptar()</slot>
+  <slot>imprimir()</slot>
+  <slot>nuevogenero()</slot>
+  <slot>quitargenero()</slot>
+ </slots>
+</ui>

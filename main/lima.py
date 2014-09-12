@@ -55,6 +55,7 @@ class Form1(QtGui.QWidget):
         modulo1 = Form2()
         modulo2 = Form3()
         modulo3 = Form4()
+        modulo4 = Form5()
         modulo5 = CambiarPassword()
         modulo6 = Form6()
         modulo7 = Form7()

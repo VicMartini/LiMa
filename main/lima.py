@@ -50,7 +50,7 @@ class Form1(QtGui.QWidget):
         self.setWindowFlags(self.windowFlags() & ~QtCore.Qt.WindowMaximizeButtonHint)
         centrar(self)
         self.close()
-        global status ,modulo0, modulo1 , modulo2 ,modulo3,modulo5,modulo6,modulo7, web 
+        global status ,modulo0, modulo1 , modulo2 ,modulo3,modulo4,modulo5,modulo6,modulo7, web 
         modulo0 = self
         modulo1 = Form2()
         modulo2 = Form3()

@@ -1,0 +1,96 @@
+[0]
+idlibro = 0
+titulo = El Nombre de la Rosa
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = jueves 18 de septiembre del 2014
+nombre = ohihi
+vfechadeentrega = jueves 11 de septiembre del 2014
+
+[1]
+idlibro = 0
+titulo = El Nombre de la Rosa
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = jueves 18 de septiembre del 2014
+nombre = jbj
+vfechadeentrega = jueves 11 de septiembre del 2014
+
+[2]
+idlibro = 0
+titulo = El Nombre de la Rosa
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = jueves 18 de septiembre del 2014
+vfechadeentrega = jueves 45 de septiembre del 2014
+nombre = hvjh
+
+[3]
+idlibro = 1
+titulo = Solaris
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = jueves 18 de septiembre del 2014
+vfechadeentrega = jueves 11 de septiembre del 2014
+nombre = bbu
+
+[4]
+idlibro = 2
+titulo = El Principito
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = viernes 26 de septiembre del 2014
+vfechadeentrega = jueves 11 de septiembre del 2014
+nombre = patry
+
+[5]
+idlibro = 2
+titulo = El Principito
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = viernes 26 de septiembre del 2014
+vfechadeentrega = jueves 11 de septiembre del 2014
+nombre = buniunbi
+
+[6]
+idlibro = 2
+titulo = El Principito
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = jueves 11 de septiembre del 2014
+vfechadeentrega = jueves 11 de septiembre del 2014
+nombre = bjbjhj
+
+[7]
+idlibro = 2
+titulo = El Principito
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = viernes 12 de septiembre del 2014
+vfechadeentrega = jueves 11 de septiembre del 2014
+nombre = asds
+
+[8]
+idlibro = 2
+titulo = El Principito
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = jueves 18 de septiembre del 2014
+vfechadeentrega = jueves 11 de septiembre del 2014
+nombre = uvhj
+
+[9]
+idlibro = 2
+titulo = El Principito
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = jueves 18 de septiembre del 2014
+vfechadeentrega = jueves 11 de septiembre del 2014
+nombre = mbj
+
+[10]
+idlibro = 3
+titulo = Solaris
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = jueves 18 de septiembre del 2014
+vfechadeentrega = jueves 11 de septiembre del 2014
+nombre = ggggg
+
+[11]
+idlibro = 8
+titulo = IT
+fechaprestamo = jueves 11 de septiembre del 2014
+fechaentrega = jueves 3 de septiembre del 2014
+vfechadeentrega = No disponible
+nombre = sdkasd
+

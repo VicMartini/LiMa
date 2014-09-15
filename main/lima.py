@@ -445,6 +445,7 @@ class Form4(QtGui.QDialog):
         QtGui.QDialog.__init__(self, parent)
         self.ui=loadUi("./GUI/limaui_m3.ui",self)
         self.setWindowTitle("Open LiMa - Buscar")
+        centrar(self)
         global opcion , index , txt
         complete = QtGui.QCompleter()
         parser.read(archlibros)
@@ -572,6 +573,7 @@ class Form5(QtGui.QDialog):
     
         QtGui.QDialog.__init__(self, parent)
         self.ui=loadUi("./GUI/limaui_m4.ui",self)
+        centrar(self)
         self.setWindowTitle("Open LiMa - Opciones")
         self.metodo_btn.setText(opmetodos[int(metodo)])
         parser = RawConfigParser()
